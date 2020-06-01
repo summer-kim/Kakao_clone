@@ -1,2 +1,4 @@
 # Kakao_clone
- HTML/CSS
+
+HTML/CSS
+Kakao Desktop Clone app
