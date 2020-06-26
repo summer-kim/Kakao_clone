@@ -1,0 +1,24 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friend .friend__avater {
+  width: 50px;
+  border-radius: 35%;
+  margin-right: 15px;
+}
+
+.friend__avater.g-avater {
+  width: 70px;
+}
+.friend__avater.m-avater {
+  width: 60px;
+}
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+.friend__content .friend__name {
+  display: block;
+}
