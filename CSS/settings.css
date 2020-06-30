@@ -3,17 +3,16 @@
 }
 .settings__section {
   border-top: 1px solid #dfd6d6be;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 .settings__title {
   padding-left: 20px;
-  background-color: teal;
   font-size: 20px;
 }
-.settings__icon {
-  width: 40px;
-  height: 5px;
+.settings__icon i {
+  width: 20px;
 }
 .settings {
+  margin-left: 10px;
   margin-bottom: 20px;
 }

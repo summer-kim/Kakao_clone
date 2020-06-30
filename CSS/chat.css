@@ -34,10 +34,12 @@
 /* 대화방 전체 코드 */
 .messages {
   background-color: #b3ccdb;
-  min-height: 175vh;
+  min-height: 100vh;
 }
 .body__chat {
   padding: 10px 0px;
+  padding-bottom: 0px;
+  height: 100%;
 }
 .body__chat .header,
 .body__chat .status-bar {
@@ -61,19 +63,28 @@
   flex-direction: column;
   font-size: 14px;
 }
+
 .messages__bubble {
+  display: block;
   background-color: #fdf01b;
   padding: 10px;
-  border-radius: 7px;
-  margin-top: 5px;
+  border-radius: 15px;
+  margin-top: 7px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+}
+.messages__sent .messages__bubble {
+  margin-right: 15px;
+  border-bottom-right-radius: 0px;
+}
+
+.messages__incoming .messages__bubble {
+  border-bottom-left-radius: 0px;
 }
 
 .messages__incoming {
   align-self: flex-start;
   display: flex;
-  margin-bottom: 15px;
 }
 .messages__sent {
   align-self: flex-end;
@@ -87,16 +98,13 @@
 }
 .messages__incoming .timestamp {
   align-self: flex-end;
-  font-size: 12px;
+  font-size: 11px;
   margin-left: 6px;
   color: #504f4f;
 }
 .messages__sent .timestamp {
   align-self: flex-end;
-  font-size: 12px;
+  font-size: 11px;
   margin-right: 6px;
   color: #504f4f;
-}
-.messages__author {
-  margin-bottom: 5px;
 }

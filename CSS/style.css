@@ -12,9 +12,7 @@
 * {
   box-sizing: border-box;
 }
-html {
-  height: 1000px;
-}
+
 body {
   background-color: white;
   padding: 10px 20px;

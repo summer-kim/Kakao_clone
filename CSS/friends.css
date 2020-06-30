@@ -4,8 +4,9 @@
   align-items: center;
 }
 .friend .friend__avater {
-  width: 50px;
-  border-radius: 35%;
+  width: 40px;
+  height: 40px;
+  border-radius: 37%;
   margin-right: 10px;
 }
 
@@ -88,4 +89,12 @@ h5 {
 }
 img {
   cursor: pointer;
+}
+
+.friends__list .friends__friends:nth-last-child(1) {
+  margin-bottom: 60px;
+}
+
+.friends__list .friend__column {
+  margin: 2.5px 0px;
 }
