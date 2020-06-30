@@ -1,0 +1,19 @@
+.header__btn {
+  font-size: 20px;
+}
+.settings__section {
+  border-top: 1px solid #dfd6d6be;
+  padding-top: 25px;
+}
+.settings__title {
+  padding-left: 20px;
+  background-color: teal;
+  font-size: 20px;
+}
+.settings__icon {
+  width: 40px;
+  height: 5px;
+}
+.settings {
+  margin-bottom: 20px;
+}

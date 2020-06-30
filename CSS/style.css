@@ -3,6 +3,10 @@
 @import "header.css";
 @import "nav.css";
 @import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
 
 * {
