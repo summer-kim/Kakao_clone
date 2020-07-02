@@ -33,6 +33,7 @@
 
 /* 대화방 전체 코드 */
 .messages {
+  padding-top: 70px;
   background-color: #b3ccdb;
   min-height: 100vh;
 }
@@ -91,9 +92,10 @@
   display: flex;
 }
 .messages img {
-  width: 40px;
+  width: 37px;
   border-radius: 15px;
-  margin: 0 15px;
+  margin-right: 10px;
+  margin-left: 15px;
   align-self: flex-start;
 }
 .messages__incoming .timestamp {
@@ -107,4 +109,8 @@
   font-size: 11px;
   margin-right: 6px;
   color: #504f4f;
+}
+/* index.css */
+.chats__chat.friend {
+  margin: 20px 0;
 }

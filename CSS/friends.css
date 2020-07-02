@@ -4,17 +4,17 @@
   align-items: center;
 }
 .friend .friend__avater {
-  width: 40px;
-  height: 40px;
-  border-radius: 37%;
-  margin-right: 10px;
+  width: 38.5px;
+  border-radius: 40%;
+  margin-right: 15px;
 }
 
 .friend__avater.g-avater {
   width: 70px;
 }
 .friend__avater.m-avater {
-  width: 60px;
+  width: 42px;
+  margin-right: 15px;
 }
 .friend .friend__column {
   display: flex;

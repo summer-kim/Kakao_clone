@@ -7,6 +7,7 @@
   justify-content: space-around;
 }
 .find .find__btn {
+  width: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
