@@ -7,6 +7,7 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
 
 * {
@@ -32,4 +33,19 @@ a {
   padding-top: 7px;
   box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
     0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  z-index: 2;
+}
+
+@keyframes pop {
+  from {
+    transform: translateY(35px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+main {
+  animation: pop 0.65s ease-in-out forwards;
 }

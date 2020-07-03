@@ -1,40 +1,120 @@
 .chat__write {
   position: fixed;
-  width: 80%;
-  bottom: 30px;
+  width: 100%;
+  bottom: 0;
   margin: 0 auto;
-  padding: 10px 20px;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #eceaea;
-  border-radius: 40px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 .chat__write i {
   font-size: 18px;
   opacity: 0.75;
 }
-.chat__write__column:nth-child(2) {
-  width: 80%;
-}
-.chat__write__column input {
+
+.chat__write input {
   width: 100%;
-  padding: 10px 10px;
+  padding: 15px 0;
+  padding-left: 40px;
   border: none;
-  border-radius: 10px;
   font-size: 14px;
+  left: 30px;
+  margin: 0 auto;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
-.chat__write__column input:focus {
+.chat__write input:focus {
+  animation: shadow 1.7s linear infinite forwards;
   outline: none;
+  width: 80%;
+  border-radius: 30px;
+  transform: translateY(-30px);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
+.chat__write__left {
+  position: absolute;
+  left: 15px;
+}
+.chat__write__right {
+  position: absolute;
+  right: 12px;
+}
+.chat__write__right i {
+  margin-right: 7px;
+}
+/* input animation*/
+
+.write__message:focus ~ .chat__icon {
+  opacity: 0;
+}
+.chat__icon {
+  transition: opacity 0.5s ease-in-out;
+}
+/* animation */
+@keyframes shadow {
+  0% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+}
+
+@keyframes incomingAni {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.messages__incoming {
+  animation: incomingAni 1s ease-in-out forwards;
+}
+@keyframes sentAni {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.messages__sent {
+  animation: sentAni 1s ease-in-out forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(2turn);
+  }
+}
+.messages img {
+  animation: spin 2s linear forwards 0.5s;
+}
 /* 대화방 전체 코드 */
 .messages {
   padding-top: 70px;
-  background-color: #b3ccdb;
+  background-color: #a0c0d7;
   min-height: 100vh;
 }
 .body__chat {
